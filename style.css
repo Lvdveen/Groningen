@@ -95,7 +95,7 @@ footer {
   align-items: center;
   height: 5vh;
   background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(img/groningen-0.jpg);
-  background-size: cover;
+  background-size: 180%;
   background-position: bottom;
   letter-spacing: 1px;
 }
@@ -120,5 +120,8 @@ footer p {
   }
   .article-container {
     grid-column: 4 / -2;
+  }
+  footer {
+    background-size: 100%;
   }
 }
