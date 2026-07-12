@@ -42,12 +42,18 @@ a:hover {
 main {
   background-color: rgb(27, 27, 27);
   display: grid;
-  grid-template-columns: 2fr 1fr 9fr;
+  grid-template-columns: 1fr 9fr 1fr;
+  grid-template-rows: 1fr 2fr;
   height: 45vh;
   overflow: auto;
 }
 .article-container {
-  grid-column: 3 / -1;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.feitjes {
+  grid-column: 2 / 3;
+  grid-row: 2 / -1;
 }
 article {
   background-color: rgb(77, 49, 7);
@@ -107,5 +113,12 @@ footer p {
   }
   footer p {
     margin-left: 24px;
+  }
+  main {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: none;
+  }
+  .article-container {
+    grid-column: 4 / -2;
   }
 }
